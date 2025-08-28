@@ -13,17 +13,12 @@ public class ValueManagement : MonoBehaviour
 
     public void OnSliderChanged(float value)
     {
-        voltage = (int)value;
+        voltage = (int) value;
     }
 
     public void Quitting()
     {
         Application.Quit();
-
-    #if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false;
-    #endif
-
     }
     
 }
